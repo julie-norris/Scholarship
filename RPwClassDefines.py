@@ -77,7 +77,7 @@ class  Student:
 			else:
 				return False
 		
-		""" Deter,omes of tje student went to wccusd for HS"""
+		""" Determines if the student went to wccusd for HS"""
 						
 		def isEligibleForHS(self):
 			if self.HS_grades.issubset(self.grades):
