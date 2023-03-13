@@ -1,4 +1,4 @@
-""" This requirement was eliminated in 2018-19"""
+""" This requirement was removed from criteria"""
 
 import cx_Oracle
 # I put all the sql queries into a different file to clean it up a little bit
@@ -50,7 +50,7 @@ attendance = positive_attendance(sql_attendance)
 		
 df=pd.DataFrame([a.calculate_attendance() for a in attendance.values()])
 #, index=index, columns=['Student_Number', 'AttendancePercentage'])
-writer=pd.ExcelWriter('Attendance1819.xlsx')
+writer=pd.ExcelWriter('AttendanceYR.xlsx')
 
 #writes the new df to excel
 df.to_excel(writer, engine=engine)
