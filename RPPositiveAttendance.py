@@ -4,7 +4,7 @@ import cx_Oracle
 # I put all the sql queries into a different file to clean it up a little bit
 from  SQL_Scripts import sql_attendance
 
-conn_str = 'psnavigator/navigate@172.24.12.211:1521/CA528'
+conn_str = 'XXXX/XXXX@XXXX/XXX'
 conn = cx_Oracle.connect(conn_str)
 c = conn.cursor()
 
